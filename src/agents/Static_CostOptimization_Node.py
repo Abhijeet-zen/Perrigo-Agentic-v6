@@ -89,7 +89,7 @@ class Static_CostOptimization_Class():
         sorted_results = all_results.sort_values(by='total_consolidated_cost', ascending=True)
         print("sorted results",sorted_results)
         best_scenario = sorted_results.iloc[0].to_dict()
-        st.dataframe(sorted_results)
+        # st.dataframe(sorted_results)
         all_results.reset_index(inplace=True, drop=True)
         self.parameters["filtered_df"] = filter_data
         self.parameters['all_results'] = all_results
