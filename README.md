@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # Perrigo_Agentic_v6
-Changes in the UI. This is the latest version 
+Fixed Static Cost consolidation algorithm. This is the latest version 
 =======
 # 🚀 Multi-Agent AI System
 
