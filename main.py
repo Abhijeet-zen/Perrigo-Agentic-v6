@@ -24,7 +24,6 @@ def check_openai_api_key(api_key):
         os.environ["OPENAI_API_KEY"] = api_key
         return True
     except openai.AuthenticationError as e:
-        st.error(f"Error occurred: {str(e)}")
         return False
     
     
