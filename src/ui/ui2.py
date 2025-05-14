@@ -70,6 +70,18 @@ def setup_sidebar():
 
     return api_key, data_files[data_source]
 
+# ---------------------- Architecture Diagram ----------------------
+@st.dialog("Architecture")
+def architecture_dialog() -> None:
+    st.image(
+        "https://github.com/Abhijeet-zen/Perrigo-Agentic-v6/blob/main/Images/SupervisorAgenticFlow_VII.png"
+    )
+    "[View full size on Github](https://github.com/Abhijeet-zen/Perrigo-Agentic-v6/blob/main/Images/SupervisorAgenticFlow_VII.png)"
+    st.caption(
+        "App hosted on [Streamlit Cloud](https://share.streamlit.io/)"
+    )
+
+
 
 # ---------------------- UI Components ----------------------
 
@@ -175,6 +187,11 @@ def main():
             summary = summarize_messages(st.session_state.conversation_state["messages"])
             st.session_state.conversation_state["messages"] = [HumanMessage(content="Summary of past messages: " + summary)]
             st.success("Conversation summarized successfully.")
+
+    
+    # Sidebar show architecture button
+    if st.sidebar.button(":material/schema: Architecture", use_container_width=True):
+        architecture_dialog()
 
 
     # Sidebar Reset Button
