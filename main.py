@@ -40,7 +40,7 @@ def main():
         """, unsafe_allow_html=True)
 
     try:
-        logo = Image.open("Images/perrigo-logo.png")
+        logo = Image.open("Images/Sigmoid-logo.png")
         st.sidebar.image(logo, width=80)
     except Exception:
         st.sidebar.error("Logo image not found.")
