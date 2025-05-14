@@ -178,7 +178,7 @@ def main():
         st.session_state.conversation_state = {"messages": [], "next": "supervisor"}
 
     # Sidebar show architecture button
-    if st.sidebar.button(":material/schema: Architecture", use_container_width=True):
+    if st.sidebar.button("🧰 Architecture"):
         architecture_dialog()
     
     # **Summarization Widget**
