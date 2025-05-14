@@ -74,11 +74,12 @@ def setup_sidebar():
 @st.dialog("Architecture")
 def architecture_dialog() -> None:
     st.image(
-        "https://github.com/Abhijeet-zen/Perrigo-Agentic-v6/blob/main/Images/SupervisorAgenticFlow_VII.png"
+        "https://raw.githubusercontent.com/Abhijeet-zen/Perrigo-Agentic-v6/main/Images/SupervisorAgenticFlow_VII.png"
     )
     st.caption(
-        "[Click to view full size image](https://github.com/Abhijeet-zen/Perrigo-Agentic-v6/blob/main/Images/SupervisorAgenticFlow_VII.png)"
+        "[Click to view full size image](https://raw.githubusercontent.com/Abhijeet-zen/Perrigo-Agentic-v6/main/Images/SupervisorAgenticFlow_VII.png)"
     )
+
 
 
 
